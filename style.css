@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #3498DB;
+}
+
+.head{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.infobox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.infobox input{
+    width: 500px;
+    height: 40px;
+    margin-bottom: 7px;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    outline: none;
+}
+
+.infobox input:hover{
+    border: 3px solid #777;
+}
+
+#start{
+    padding: 0;
+}
+
+.fightbox{
+    margin-top: 100px;
+    height: 230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+    border: #777;
+    outline: none;
+}
+
+.info h{
+    position: relative;
+    top: 30px;
+}
+
+.info p, .info button{
+    position: relative;
+    top: 60px;
+}
+
+.info{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.fightbtn, .play{
+    width: 130px;
+    height: 20px;
+    border-radius: .300rem;
+    font-weight: bold;
+}
+
+.playagain{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 525px){
+    .infobox input{
+        width: 350px;
+    }
+} 
