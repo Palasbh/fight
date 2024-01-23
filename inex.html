@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Figth with users.</title>
+</head>
+<body>
+    <div class="head">
+    <h1>Wanna fight with your friends? Just fill in the info and get started with it!</h1>
+    </div>
+    <div class="infobox">
+                <input type="text" placeholder="First player name here." id="name1" value="" required><br>
+        <input type="text" placeholder="Second player name" id="name2" value="" required><br>
+        <input type="submit" value="Start the fight &rarr;" id="start">
+    </div>
+    <div class="fightbox">
+        <div class="info">
+            <h>INFO</h> 
+            <p><b>Player's name:</b> <span id="sname1"></span></p><br>
+            <p><b>Player total health:</b>100</p><br>
+            <p><b>Player current health:</b><span id="sch1">100</span></p><br>
+            <p><b>Player's status:</b> <span id="status">No one won.</span></p><br>
+            <button id="punch1" class="fightbtn" disabled>Punch</button>
+         </div>
+         <div class="info">
+            <h>INFO</h>
+            <p><b>Player's name:</b> <span id="sname2"></span></p><br>
+            <p><b>Player total health:</b>100</p><br>
+            <p><b>Player current health:</b><span id="sch2">100</span></p><br>
+            <p><b>Player's status:</b> <span id="status2">No one won.</span></p><br>
+            <button id="punch2" class="fightbtn" disabled>Punch</button>
+         </div>
+    </div>
+    <div class="playagain"><button class="play" id="play" disabled>Play again?</button></div>
+    <script src="script.js"></script>
+</body>
+</html>
